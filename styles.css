@@ -556,7 +556,16 @@ body {
         box-shadow: 0 0 0 15px rgba(37, 211, 101, 0);
     }
 }
-  
+  @media (max-width: 768px) {
+    .whatsapp-icon {
+      bottom: 20px;
+      left: 20px;
+    }
+    #scrollToTopBtn {
+      bottom: 20px !important;
+      right: 20px !important;
+    }
+  }
   .whatsapp-icon:hover {
     transform: scale(1.2); /* Smooth hover effect */
   }
@@ -592,4 +601,7 @@ body {
 
   .footer-para{
     margin: 0px;
+  }
+  .collapsed{
+    background-color: #ff0090;
   }
