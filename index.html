@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Developer Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">SHERLIN A G</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Experience</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Education</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Blogs</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Left Section -->
+          <div class="col-md-6">
+            <h1>Hello,</h1>
+            <h2>
+              This is <span class="highlight">SHERLIN A G</span>,<br />I'm a
+              Professional <span class="dev-title">Software Developer</span>.
+            </h2>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="buttons">
+              <a href="#" class="btn contact-btn"
+                >Contact Me <i class="fas fa-user"></i
+              ></a>
+              <a href="#" class="btn resume-btn"
+                >Get Resume <i class="fas fa-download"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Right Section (Code Snippet) -->
+          <div class="col-md-6">
+            <div class="code-box">
+              <pre>
+<code class="code">
+const coder = {
+    name: 'Sherlin A G',
+    skills: ['React', 'Node', 'MySQL', 'MongoDB', 'Docker', 'Git'],
+    hardWorker: true,
+    quickLearner: true,
+    problemSolver: true,
+    hireable: function() {
+        return this.hardWorker && this.problemSolver && this.skills.length >= 5;
+    }
+};
+                        </code>
+                        </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about-section container-fluid">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-light about-text">
+          <h2 class="section-title">WHO I AM?</h2>
+          <p>
+            My name is <strong>SHERLIN A G</strong>. I am a professional and
+            enthusiastic programmer in my daily life. I am a quick learner with
+            a self-learning attitude. I love to explore new technologies and am
+            passionate about problem-solving. My core skill is based on
+            JavaScript, and I enjoy using it in web development. I am available
+            for any kind of job opportunity that suits my skills and interests.
+          </p>
+        </div>
+        <div class="col-md-6 text-center">
+          <div class="profile-img">
+            <img src="./imgs/profilepic.jpg" alt="Sherlin A G" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+      <!-- Side Button -->
+      <div class="side-button">ABOUT ME</div>
+    </section>
+
+    <section class="experience-section">
+      <div class="container">
+        <h2 class="section-title">Experiences</h2>
+        <div class="row">
+          <!-- Experience Cards -->
+          <div class="col-md-12">
+            <div class="experience-card">
+              <span class="date">(Sep 2024 - Present)</span>
+              <h3 class="position">SOFTWARE DEVELOPER</h3>
+              <p class="company">Ordinal Technology Solutions Pvt. Ltd.</p>
+            </div>
+          </div>
+
+          <div class="col-md-12">
+            <div class="experience-card">
+              <span class="date">(Dec 2023 - Aug 2024)</span>
+              <h3 class="position">FULLSTACK DEVELOPER</h3>
+              <p class="company">Freelancer</p>
+            </div>
+          </div>
+
+          <div class="col-md-12">
+            <div class="experience-card">
+              <span class="date">(Mar 2023 - Dec 2023)</span>
+              <h3 class="position">INTERNSHIP</h3>
+              <p class="company">JSpiders - Training & Development Center</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="skills-section">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="row justify-content-center">
+          <!-- Skill Cards -->
+          <div class="col-md-2 col-6">
+            <div class="skill-card">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                alt="React"
+              />
+              <p>React</p>
+            </div>
+          </div>
+
+          <div class="col-md-2 col-6">
+            <div class="skill-card">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+                alt="Next.js"
+              />
+              <p>Next.js</p>
+            </div>
+          </div>
+
+          <div class="col-md-2 col-6">
+            <div class="skill-card">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+                alt="Tailwind"
+              />
+              <p>Tailwind</p>
+            </div>
+          </div>
+
+          <div class="col-md-2 col-6">
+            <div class="skill-card">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                alt="MongoDB"
+              />
+              <p>MongoDB</p>
+            </div>
+          </div>
+
+          <div class="col-md-2 col-6">
+            <div class="skill-card">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                alt="MySQL"
+              />
+              <p>MySQL</p>
+            </div>
+          </div>
+
+          <div class="col-md-2 col-6">
+            <div class="skill-card">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                alt="Git"
+              />
+              <p>Git</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects-section">
+      <div class="container">
+        <h2 class="section-title">PROJECTS</h2>
+
+        <!-- Project Card 1 -->
+        <div class="project-card">
+          <div class="card-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <div class="card-body">
+            <h3 class="project-title">AI Powered Financial App</h3>
+            <pre class="code-block">
+<code>
+const project = {
+    name: 'AI Powered Financial App',
+    tools: ['Express', 'MongoDB', 'OpenAI API', 'AWS SES', 'AWS S3', 
+            'Node Mailer', 'Joi', 'Puppeteer', 'EC2', 'PM2', 'Nginx'],
+    myRole: Backend Developer,
+    Description: "Developed API using Express, TypeScript, OpenAI, AWS, 
+    and MongoDB. Used OTP via AWS SES, Google, and Facebook for authentication. 
+    Built AI assistants using OpenAI's latest model. Voice messages converted 
+    to text using AWS Transcribe. Fetches data from Google Sheets and generates 
+    a PDF, sent via AWS SES."
+};
+</code>
+                    </pre>
+          </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="project-card">
+          <div class="card-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <div class="card-body">
+            <h3 class="project-title">Travel Agency App</h3>
+            <pre class="code-block">
+<code>
+const project = {
+    name: 'Travel Agency App',
+    tools: ['React', 'Node.js', 'MongoDB', 'Stripe', 'Firebase'],
+    myRole: Full Stack Developer,
+    Description: "Built a travel agency platform with dynamic pricing, 
+    real-time booking, and payment integration using Stripe. Used Firebase 
+    for authentication and MongoDB for managing travel packages."
+};
+</code>
+                    </pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="education-section">
+      <div class="container">
+        <h2 class="section-title">Educations</h2>
+
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              src="./imgs/computer.jpg"
+              alt="Education Image"
+              class="education-image"
+            />
+          </div>
+          <div class="col-md-6">
+            <!-- Education Card 1 -->
+            <div class="education-card">
+              <div class="year">2019 - 2023</div>
+              <h3 class="degree">BACHELOR OF TECHNOLOGY</h3>
+              <p class="institution">St. Joseph College of Engineering</p>
+            </div>
+
+            <!-- Education Card 2 -->
+            <div class="education-card">
+              <div class="year">2018 - 2019</div>
+              <h3 class="degree">HIGHER SECONDARY CERTIFICATE</h3>
+              <p class="institution">St. Mary Goretty Hr. Sec. School</p>
+            </div>
+
+            <!-- Education Card 3 -->
+            <div class="education-card">
+              <div class="year">2016 - 2017</div>
+              <h3 class="degree">SECONDARY SCHOOL LEAVING CERTIFICATE</h3>
+              <p class="institution">St. Mary Goretty Hr. Sec. School</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2 class="text-light text-center">CONTACT WITH ME</h2>
+        <p class="text-light text-center">
+          If you have any questions or concerns, please feel free to reach out!
+        </p>
+
+        <div class="row">
+          <!-- Contact Form -->
+          <div class="col-md-6">
+            <div class="contact-form">
+              <form>
+                <div class="mb-3">
+                  <label class="text-light">Your Name:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter your name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label class="text-light">Your Email:</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Enter your email"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label class="text-light">Your Message:</label>
+                  <textarea
+                    class="form-control"
+                    rows="4"
+                    placeholder="Enter your message"
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">
+                  SEND MESSAGE <i class="fas fa-envelope"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Contact Details -->
+          <div class="col-md-6 text-light">
+            <p><i class="fas fa-envelope"></i> sherlina18@gmail.com</p>
+            <p><i class="fas fa-phone"></i> +91 7094593345</p>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> Mulaviali, Veeyanoor,
+              Nagercoil, Tamilnadu, India
+            </p>
+
+            <!-- Social Media Icons -->
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-stack-overflow"></i></a>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center text-light">
+      <p>© Developer Portfolio by <span class="highlight">Sherlin A G</span></p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
