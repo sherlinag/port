@@ -521,8 +521,8 @@ body {
 /* whatsapp */
 .whatsapp-icon {
     position: fixed;   /* Stays in place even when scrolling */
-    bottom: 20px;      /* 20px from the bottom */
-    left: 20px;        /* 20px from the left */
+    bottom: 35px;      /* 20px from the bottom */
+    left: 35px;        /* 20px from the left */
     background-color: #25D366; /* WhatsApp Green */
     color: white;      /* Icon color */
     width: 50px;
@@ -537,6 +537,24 @@ body {
     z-index: 1000;     /* Keep it above other elements */
     transition: transform 0.3s ease-in-out;
   }
+  .whatsapp-icon:before {
+    animation: _pulse 1.2s infinite;
+    border-color: inherit;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0 rgba(37, 211, 101, 0);
+    content: "";
+    height: 50px;
+    position: absolute;
+    width: 50px;  
+} 
+@keyframes _pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 101, .75);
+    }
+    100% {
+        box-shadow: 0 0 0 15px rgba(37, 211, 101, 0);
+    }
+}
   
   .whatsapp-icon:hover {
     transform: scale(1.2); /* Smooth hover effect */
@@ -545,8 +563,8 @@ body {
   /* Scroll to top buttom */
   #scrollToTopBtn {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 30px;
+    right: 30px;
     width: 40px;
     height: 40px;
     background-color: #ff0090;
@@ -568,5 +586,5 @@ body {
     transform: scale(1.1);
   }
   .fa-chevron-up{
-    font-size: smaller;
+    font-size:smaller;
   }
