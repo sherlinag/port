@@ -1,5 +1,6 @@
 /* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url("https://fonts.cdnfonts.com/css/rightman-signature");
 
 /* General Styles */
 body {
@@ -548,8 +549,8 @@ body {
     right: 20px;
     width: 40px;
     height: 40px;
-    background-color: #ffffff;
-    color: white;
+    background-color: #ff0090;
+    color: #ffffff;
     border: none;
     border-radius: 50%;
     font-size: 24px;
@@ -563,7 +564,7 @@ body {
   }
   
   #scrollToTopBtn:hover {
-    background-color: #ff0b0b;
+    background-color: #2d39da;
     transform: scale(1.1);
   }
   .fa-chevron-up{
