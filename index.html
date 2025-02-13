@@ -77,7 +77,7 @@
           </div>
 
           <!-- Right Section (Code Snippet) -->
-          <div class="col-md-6">
+          <!-- <div class="col-md-6">
             <div class="code-box">
               <pre>
 <code class="code">
@@ -94,7 +94,35 @@ const coder = {
                         </code>
                         </pre>
             </div>
-          </div>
+          </div> -->
+          <div class="code-container">
+            <div class="code-header">
+                <div class="dots">
+                    <div class="dot red"></div>
+                    <div class="dot yellow"></div>
+                    <div class="dot green"></div>
+                </div>
+            </div>
+            <div class="code-content">
+                <code>
+                    <span class="keyword">const</span> coder = {
+                        <span class="string">name</span>: <span class="string">'Sherlin A G'</span>,
+                        <span class="string">skills</span>: [<span class="string">'React'</span>, <span class="string">'Node'</span>, <span class="string">'MySQL'</span>, <span class="string">'MongoDB'</span>, <span class="string">'Docker'</span>, <span class="string">'Git'</span>],
+                        <span class="string">hardWorker</span>: <span class="boolean">true</span>,
+                        <span class="string">quickLearner</span>: <span class="boolean">true</span>,
+                        <span class="string">problemSolver</span>: <span class="boolean">true</span>,
+                        <span class="function">hireable</span>: <span class="keyword">function</span>() {
+                            <span class="keyword">return</span> (
+                                this.hardWorker && 
+                                this.problemSolver && 
+                                this.skills.length >= 5
+                            );
+                        }
+                    };
+                </code>
+            </div>
+        </div>
+        
         </div>
       </div>
     </section>

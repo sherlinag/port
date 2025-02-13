@@ -452,3 +452,67 @@ body {
     color: #4caf50;
     font-weight: bold;
 }
+/* code snippet */
+.code-container {
+    background: #0d1117;
+    padding: 20px;
+    border-radius: 10px;
+    color: #c9d1d9;
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+    margin-top: 20px;
+}
+
+.code-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: #161b22;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.code-header .dots {
+    display: flex;
+    gap: 6px;
+}
+
+.code-header .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.red { background: #ff5f56; }
+.yellow { background: #ffbd2e; }
+.green { background: #27c93f; }
+
+.code-content {
+    padding: 15px;
+    background: #161b22;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.code-content .keyword {
+    color: #ff7b72;
+    font-weight: bold;
+}
+
+.code-content .string {
+    color: #f2cc60;
+}
+
+.code-content .boolean {
+    color: #79c0ff;
+}
+
+.code-content .function {
+    color: #7ee787;
+}
