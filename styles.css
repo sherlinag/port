@@ -447,6 +447,7 @@ body {
 .footer {
     padding: 15px;
     background-color: #111;
+    /* background: linear-gradient(45deg, rgb(200, 80, 192), rgb(65, 88, 208)); */
 }
 
 .highlight {
@@ -587,4 +588,8 @@ body {
   }
   .fa-chevron-up{
     font-size:smaller;
+  }
+
+  .footer-para{
+    margin: 0px;
   }
