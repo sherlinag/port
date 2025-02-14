@@ -14,8 +14,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
       integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"/>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <script src="./script.js"></script>
     <script
       src="https://kit.fontawesome.com/a076d05399.js"
@@ -42,7 +46,7 @@
             <li class="nav-item"><a class="nav-link" href="#">Skills</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Education</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Testimonial</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+            <!-- <li class="nav-item"><a class="nav-link" href="#">Projects</a></li> -->
             <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
           </ul>
         </div>
@@ -65,7 +69,6 @@
               <a href="#"><i class="fab fa-linkedin"></i></a>
               <a href="#"><i class="fab fa-instagram"></i></a>
               <a href="#"><i class="fab fa-whatsapp"></i></a>
-              
             </div>
             <div class="buttons">
               <a href="#" class="btn contact-btn"
@@ -78,101 +81,108 @@
           </div>
 
           <!-- Right Section (Code Snippet) -->
-          <!-- <div class="col-md-6">
-            <div class="code-box">
-              <pre>
-<code class="code">
-const coder = {
-    name: 'Sherlin A G',
-    skills: ['React', 'Node', 'MySQL', 'MongoDB', 'Docker', 'Git'],
-    hardWorker: true,
-    quickLearner: true,
-    problemSolver: true,
-    hireable: function() {
-        return this.hardWorker && this.problemSolver && this.skills.length >= 5;
-    }
-};
-                        </code>
-                        </pre>
+          <div class="col-md-6">
+            <dotlottie-player src="https://lottie.host/427e2384-a3b1-4f22-a18f-fd5d1e613695/EAnZhhxbuZ.lottie" background="transparent" speed="1" style="width: 550px; height: 500px" loop autoplay></dotlottie-player>
             </div>
-          </div> -->
-          <!-- new code snippet -->
-          <div class="code-container">
-            <div class="code-header">
-                <div class="dots">
-                    <div class="dot red"></div>
-                    <div class="dot yellow"></div>
-                    <div class="dot green"></div>
-                </div>
-            </div>
-            <div class="code-content">
-                <code>
-                    <span class="keyword">const</span> coder = {
-                        <span class="string">name</span>: <span class="string">'Sherlin A G'</span>,
-                        <span class="string">skills</span>: [<span class="string">'React'</span>, <span class="string">'Node'</span>, <span class="string">'MySQL'</span>, <span class="string">'MongoDB'</span>, <span class="string">'Docker'</span>, <span class="string">'Git'</span>],
-                        <span class="string">hardWorker</span>: <span class="boolean">true</span>,
-                        <span class="string">quickLearner</span>: <span class="boolean">true</span>,
-                        <span class="string">problemSolver</span>: <span class="boolean">true</span>,
-                        <span class="function">hireable</span>: <span class="keyword">function</span>() {
-                            <span class="keyword">return</span> (
-                                this.hardWorker && 
-                                this.problemSolver && 
-                                this.skills.length >= 5
-                            );
-                        }
-                    };
-                </code>
-            </div>
-        </div>
-<!-- ------------------- -->
+            
+
+          
+          <!-- ------------------- -->
         </div>
       </div>
     </section>
     <section class="about-section container-fluid">
       <div class="row align-items-center">
+        <!-- Left Side Content -->
         <div class="col-md-6 text-light about-text">
           <h2 class="section-title">WHO I AM?</h2>
           <p>
-            My name is <strong>SHERLIN A G</strong>. I am a professional and
-            enthusiastic programmer in my daily life. I am a quick learner with
-            a self-learning attitude. I love to explore new technologies and am
-            passionate about problem-solving. My core skill is based on
-            JavaScript, and I enjoy using it in web development. I am available
-            for any kind of job opportunity that suits my skills and interests.
+            <ul class="arrow-list">
+              <li>I am a passionate and dedicated programmer with a strong self-learning attitude and a keen interest in exploring new technologies.</li>
+              <li>Problem-solving excites me, and I thrive in tackling complex challenges with efficient solutions.</li>
+              <li>My core expertise lies in JavaScript, which I leverage to build dynamic and interactive web applications.</li>
+              <li>I am always eager to enhance my skills and stay updated with the latest advancements in technology.</li>
+              <li>Open to exciting opportunities, I am ready to contribute my expertise and enthusiasm to innovative projects that align with my interests.</li>
+            </ul>
           </p>
+
+          <!-- Icon Above Stats -->
+          <!-- <div class="stats-header"> -->
+            <!-- <i class="fas fa-chart-line"></i> -->
+            <!-- FontAwesome Icon -->
+          <!-- </div> -->
+
+          <!-- Projects, Experience & Certifications -->
+          <div class="about-stats">
+            <div class="stat-box">
+              <i class="fa-solid fa-laptop-code expicons"></i>
+              <h3>5</h3>
+              <p>Projects</p>
+            </div>
+            <div class="stat-box">
+              <i class="fa-solid fa-user-gear expicons"></i>
+              <h3>1+</h3>
+              <p>Experience</p>
+            </div>
+            <div class="stat-box">
+              <i class="fa-solid fa-award expicons"></i>
+              <h3>3</h3>
+              <p>Certifications</p>
+            </div>
+          </div>
         </div>
+
+        <!-- Right Side Image -->
         <div class="col-md-6 text-center">
           <div class="profile-img">
-            <img src="./imgs/profilepic.jpg" alt="Sherlin A G" class="img-fluid" />
+            <img
+              src="./imgs/profilepic.jpg"
+              alt="Sherlin A G"
+              class="img-fluid"
+            />
           </div>
         </div>
       </div>
+
       <!-- Side Button -->
       <div class="side-button">ABOUT ME</div>
     </section>
 
-    <section class="experience-section">
+    <section class="experience-section py-5">
       <div class="container">
         <h2 class="section-title">Experiences</h2>
-        <div class="row">
-          <!-- Experience Cards -->
-          <div class="col-md-12">
+
+        <div class="row align-items-center">
+          <!-- Lottie Animation (Left Side) -->
+          <div class="col-md-6 d-flex justify-content-center">
+            <script
+              src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+              type="module"
+            ></script>
+            <dotlottie-player
+              src="https://lottie.host/f0df6715-5431-414b-a17a-5ece4c30fabe/2GLvtnrFIh.lottie"
+              background="transparent"
+              speed="1"
+              style="width: 100%; max-width: 600px; height: 600px"
+              loop
+              autoplay
+            ></dotlottie-player>
+          </div>
+
+          <!-- Experience Details (Right Side) -->
+          <div class="col-md-6">
             <div class="experience-card">
               <span class="date">(Sep 2024 - Present)</span>
               <h3 class="position">SOFTWARE DEVELOPER</h3>
               <p class="company">Ordinal Technology Solutions Pvt. Ltd.</p>
             </div>
-          </div>
 
-          <div class="col-md-12">
             <div class="experience-card">
               <span class="date">(Dec 2023 - Present)</span>
               <h3 class="position">FULLSTACK DEVELOPER</h3>
               <p class="company">Freelancer</p>
             </div>
-          </div>
 
-          <div class="col-md-12">
             <div class="experience-card">
               <span class="date">(Mar 2023 - Dec 2023)</span>
               <h3 class="position">INTERNSHIP</h3>
@@ -182,6 +192,7 @@ const coder = {
         </div>
       </div>
     </section>
+
     <section class="skills-section">
       <div class="container">
         <h2 class="section-title">Skills</h2>
@@ -307,18 +318,22 @@ const project = {
       </div>
     </section>
 
-    <section class="education-section">
+    <section class="education-section py-5">
       <div class="container">
-        <h2 class="section-title">Educations</h2>
+        <h2 class="section-title">Education</h2>
 
-        <div class="row">
-          <div class="col-md-6">
-            <img
-              src="./imgs/computer.jpg"
-              alt="Education Image"
-              class="education-image"
-            />
+        <div class="row align-items-center">
+          <!-- Lottie Animation -->
+          <div class="col-md-6 d-flex justify-content-center">
+            <script
+              src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+              type="module"
+            ></script>
+            <dotlottie-player src="https://lottie.host/d3d5f9d4-e4c3-4377-b8e5-ba375cc6179c/0HLq1onpjH.lottie" background="transparent" speed="1" style="width: 600px; height: 600px" loop autoplay></dotlottie-player>
+
           </div>
+
+          <!-- Education Details -->
           <div class="col-md-6">
             <!-- Education Card 1 -->
             <div class="education-card">
@@ -337,27 +352,92 @@ const project = {
             <!-- Education Card 3 -->
             <div class="education-card">
               <div class="year">2016 - 2017</div>
-              <h3 class="degree">SECONDARY SCHOOL LEAVING CERTIFICATE </h3>
+              <h3 class="degree">SECONDARY SCHOOL LEAVING CERTIFICATE</h3>
               <p class="institution">St. Mary Goretty Hr. Sec. School</p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section id="contact" class="contact-section">
+
+    <!-- Testimonial Section -->
+
+    <section class="testimonials">
+      <h2 class="section-title">TESTIMONIALS</h2>
+      <div class="testimonial-slider">
+          <div class="testimonial-container">
+              <div class="testimonial">
+                <div class="quote-icon">❝</div>
+                  <p>"I had the pleasure of working with Thaufiq on a personal project. He possesses a strong team-playing spirit, sincere commitment, and a keen interest in learning."</p><div class="closing-quote">❞</div>
+                  <div class="testimonial-footer">
+                      <img src="/imgs/profilepic.jpg" alt="Sreenidhi S">
+                      <h3>Sreenidhi S</h3>
+                      <p>GIS Developer</p>
+                  </div>
+              </div>
+              <div class="testimonial">
+                  <div class="quote-icon">❝</div>
+                  <p>"Ahmed is a dynamic force of positivity. His passion for technology is inspiring, making him an invaluable team member.</p>"<div class="closing-quote">❞</div>
+                  <div class="testimonial-footer">
+                      <img src="/imgs/profilepic.jpg" alt="Syed Usman">
+                      <h3>Syed Usman</h3>
+                      <p>React Developer</p>
+                  </div>
+              </div>
+              <div class="testimonial">
+                  <div class="quote-icon">❝</div>
+                  <p>"Ahmed not just a friend but also an exceptional partner in our academic endeavors. His dedication made him stand out among peers."</p><div class="closing-quote">❞</div>
+                  <div class="testimonial-footer">
+                      <img src="/imgs/profilepic.jpg" alt="Perumal P">
+                      <h3>Perumal P</h3>
+                      <p>Process Executive</p>
+                  </div>
+              </div>
+              <div class="testimonial">
+                  <div class="quote-icon">❝</div>
+                  <p>"Working with Ahmed was an excellent experience. His expertise in problem-solving and collaboration is commendable."</p><div class="closing-quote">❞</div>
+                  <div class="testimonial-footer">
+                      <img src="/imgs/profilepic.jpg" alt="John Doe">
+                      <h3>John Doe</h3>
+                      <p>Software Engineer</p>
+                  </div>
+              </div>
+              <div class="testimonial">
+                  <div class="quote-icon">❝</div>
+                  <p>"Ahmed's leadership and dedication are unparalleled. His ability to adapt and drive projects to success is inspiring."</p><div class="closing-quote">❞</div>
+                  <div class="testimonial-footer">
+                      <img src="/imgs/profilepic.jpg" alt="Jane Smith">
+                      <h3>Jane Smith</h3>
+                      <p>Project Manager</p>
+                  </div>
+              </div>
+          </div>
+          <div class="dots">
+              <span class="dot active" onclick="currentSlide(0)"></span>
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              
+            
+          </div>
+      </div>
+  </section>
+
+  <!-- contact section -->
+
+    <section class="contact-section py-5">
       <div class="container">
-        <h2 class="section-title text-light text-center">CONTACT WITH ME</h2>
+        <h2 class="section-title">CONTACT WITH ME</h2>
         <p class="text-light text-center">
           If you have any questions or concerns, please feel free to reach out!
         </p>
 
-        <div class="row">
-          <!-- Contact Form -->
-          <div class="col-md-6">
+        <div class="row align-items-center">
+          <!-- Contact Form (Left Side) -->
+          <div class="col-md-6 formdata">
             <div class="contact-form">
               <form>
                 <div class="mb-3">
-                  <label class="text-light">Your Name :</label>
+                  <!-- <label class="text-light">Your Name :</label> -->
                   <input
                     type="text"
                     class="form-control"
@@ -365,7 +445,7 @@ const project = {
                   />
                 </div>
                 <div class="mb-3">
-                  <label class="text-light">Your Email :</label>
+                  <!-- <label class="text-light">Your Email :</label> -->
                   <input
                     type="email"
                     class="form-control"
@@ -373,7 +453,7 @@ const project = {
                   />
                 </div>
                 <div class="mb-3">
-                  <label class="text-light">Your Message :</label>
+                  <!-- <label class="text-light">Your Message :</label> -->
                   <textarea
                     class="form-control"
                     rows="4"
@@ -387,22 +467,39 @@ const project = {
             </div>
           </div>
 
-          <!-- Contact Details -->
-          <div class="col-md-6 text-light">
-            <p><i class="fas fa-envelope"></i> sherlinag18@gmail.com</p>
-            <p><i class="fas fa-phone"></i> 7094593345</p>
-            <p>
-              <i class="fas fa-map-marker-alt"></i> Nagercoil, Tamilnadu, India.
-            </p>
+          <!-- Contact Details (Right Side) -->
+          <div class="col-md-6">
+            <div class="row">
+              <!-- Email & Phone (First Row) -->
+              <div class="col-md-6 contact-card">
+                <i class="fas fa-envelope"></i>
+                <h4>Email</h4>
+                <p>sherlinag18@gmail.com</p>
+              </div>
 
-            <!-- Social Media Icons -->
-            <div class="social-icons">
-              <a href="#"><i class="fab fa-github"></i></a>
-              <a href="#"><i class="fab fa-linkedin"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-whatsapp"></i></a>
-              <!-- <a href="#"><i class="fab fa-stack-overflow"></i></a>
-              <a href="#"><i class="fab fa-facebook"></i></a> -->
+              <div class="col-md-6 contact-card">
+                <i class="fas fa-phone"></i>
+                <h4>Phone</h4>
+                <p>7094593345</p>
+              </div>
+
+              <!-- Address & Social Media (Second Row) -->
+              <div class="col-md-6 contact-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <h4>Address</h4>
+                <p>Nagercoil, Tamilnadu, India</p>
+              </div>
+
+              <div class="col-md-6 contact-card">
+                <i class="fas fa-share-alt"></i>
+                <h4>Social Media</h4>
+                <div class="social-icons">
+                  <a href="#"><i class="fab fa-github"></i></a>
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -411,15 +508,55 @@ const project = {
 
     <!-- Footer -->
     <footer class="footer text-center text-light">
-      <p class="footer-para">© Developer Portfolio by <span class="highlight">Sherlin A G</span></p>
+      <p class="footer-para">
+        © Developer Portfolio by <span class="highlight">Sherlin A G</span>
+      </p>
     </footer>
     <a href="https://wa.me/your-number" target="_blank" class="whatsapp-icon">
       <i class="fab fa-whatsapp"></i>
-  </a>
-  <button id="scrollToTopBtn">
+    </a>
+    <button id="scrollToTopBtn">
       <i class="fa-sharp fa-solid fa-chevron-up"></i>
-  </button>
+    </button>
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+let slideIndex = 0;
+const slides = document.querySelectorAll(".testimonial");
+const dots = document.querySelectorAll(".dot");
+let slidesToShow = window.innerWidth > 768 ? 3 : 1;
+
+function showSlides(index) {
+    slides.forEach((slide, i) => {
+        slide.style.display = i >= index && i < index + slidesToShow ? "block" : "none";
+    });
+
+    dots.forEach((dot, i) => {
+        dot.classList.toggle("active", i === index);
+    });
+}
+
+function currentSlide(index) {
+    slideIndex = index;
+    showSlides(slideIndex);
+}
+
+function autoSlide() {
+    slideIndex = (slideIndex + 1) % (slides.length - (slidesToShow - 1));
+    showSlides(slideIndex);
+}
+
+window.addEventListener("resize", () => {
+    slidesToShow = window.innerWidth > 768 ? 3 : 1;
+    showSlides(slideIndex);
+});
+
+setInterval(autoSlide, 4000);
+showSlides(slideIndex);
+
+
+    
+    </script>
   </body>
 </html>

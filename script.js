@@ -17,3 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+// Testimonial slider
+// Testimonial slider

@@ -350,6 +350,7 @@ body {
     padding: 10px 20px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 8px;
+    
 }
 
 /* Education Cards */
@@ -391,6 +392,7 @@ body {
 
 .contact-section {
     padding: 50px 0;
+    text-align: center;
 }
 
 .contact-form {
@@ -398,12 +400,16 @@ body {
     padding: 20px;
     border-radius: 10px;
 }
-
+.formdata{
+    height: 100%;
+}
 .contact-form input,
 .contact-form textarea {
     background: rgba(255, 255, 255, 0.2);
     border: none;
     color: white;
+    margin-top: 18px;
+    margin-bottom: 18px;
 }
 
 .contact-form input::placeholder,
@@ -415,6 +421,8 @@ body {
 .contact-form textarea:focus {
     outline: none;
     border: 1px solid #5a5a5a;
+    background-color: #241d4e;
+    color: white;
 }
 
 .contact-form .btn {
@@ -422,26 +430,66 @@ body {
     border: none;
     color: white;
     font-weight: bold;
+    max-width: 200px;
 }
 
 .contact-form .btn:hover {
     background: linear-gradient(45deg, #4158d0, #c850c0);
 }
 
-.social-icons {
-    margin-top: 20px;
+.contact-card {
+    background: rgba(255, 255, 255, 0.1);
+    width: 45%; /* Reduce width */
+    padding: 20px; /* Reduce padding */
+    font-size: 14px; /* Reduce text size */
+    margin: 5px; 
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 255, 0, 0.3);
+}
+
+.contact-card i {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+
+.contact-card h4 {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.contact-card p {
+    margin: 5px 0 0;
+    font-size: 16px;
+}
+
+/* Social Media Icons */
 .social-icons a {
-    color: white;
-    font-size: 24px;
-    margin-right: 10px;
-    text-decoration: none;
-    transition: color 0.3s;
+    color: #fff;
+    font-size: 20px;
+    margin: 5px;
+    transition: color 0.3s ease;
 }
 
 .social-icons a:hover {
-    color: #c850c0;
+    color: #4CAF50;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .contact-form, .contact-card {
+        width: 90%;
+        margin: 10px auto;
+    }
 }
 
 .footer {
@@ -602,6 +650,202 @@ body {
   .footer-para{
     margin: 0px;
   }
-  .collapsed{
+  .navbar-toggler{
     background-color: #ff0090;
   }
+
+
+  .stats-header {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.stats-header i {
+    font-size: 40px;
+    color: #4CAF50; /* Green accent color */
+}
+
+.about-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.stat-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex: 1;
+    margin: 0 10px;
+}
+
+.stat-box h3 {
+    font-size: 24px;
+    color: #4CAF50;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.stat-box p {
+    font-size: 16px;
+    color: #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-stats {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stat-box {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .about-text {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .stats-header {
+        text-align: center;
+    }
+    dotlottie-player {
+        display: none;
+    }
+}
+
+
+
+.testimonials {
+    text-align: center;
+    padding: 50px 20px;
+   
+    color: white;
+}
+
+.testimonial-slider {
+    position: relative;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.testimonial {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    text-align: left;
+    flex: 0 0 auto;
+    display: none;
+    position: relative;
+    transition: transform 0.5s ease-in-out;
+}
+
+.quote-icon {
+    font-size: 40px;
+    color: #eae7dd;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+}
+.closing-quote {
+    text-align: right;
+    margin-top: -20px; 
+    font-size: 40px;
+    color: #555;/* Adjust positioning */
+}
+
+.testimonial-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.testimonial-footer img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid #ffcc00;
+}
+
+.testimonial-footer h3 {
+    margin: 5px 0 2px;
+    font-size: 18px;
+    color: #ffcc00;
+}
+
+.testimonial-footer p {
+    font-size: 14px;
+    color: #bbb;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bb8888;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.dot.active {
+    background-color: #9adeaa;
+}
+
+@media (max-width: 768px) {
+    .testimonial-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .testimonial {
+        width: 90%;
+    }
+}
+.expicons{
+    position: relative;
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: #ff79c6;
+    transition: 0.3s;
+}
+
+.arrow-list {
+    list-style: none;
+    padding: 0;
+}
+
+.arrow-list li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.arrow-list li::before {
+    content: ">";
+    position: absolute;
+    left: 0;
+    color:#4CAF50; /* Change color as needed */
+    font-weight: bold;
+}
